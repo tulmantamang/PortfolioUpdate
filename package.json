@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-mern-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "start": "turbo run start"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.0"
+  },
+  "overrides": {
+    "three": "0.153.0"
+  }
+}
+

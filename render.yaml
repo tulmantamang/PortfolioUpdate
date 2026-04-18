@@ -1,0 +1,13 @@
+services:
+- type: web
+  name: portfolio-backend
+  env: node
+  buildCommand: npm install && npm run build || true
+  startCommand: npm start
+  envVars:
+  - key: MONGODB_URI
+    value: your-mongodb-uri
+  - key: JWT_SECRET
+    value: your_jwt_secret
+  - key: RECIPIENT_EMAIL
+    value: you@example.com
