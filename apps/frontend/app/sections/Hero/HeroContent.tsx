@@ -7,8 +7,7 @@ import dynamic from 'next/dynamic';
 import { PERSONAL_INFO } from '../../config/personal';
 
 
-// Lazy-load the code window (removes risk of SSR issues with animations)
-const CodeWindow = dynamic(() => import('./HeroScene'), { ssr: false });
+import CodeWindow from './HeroScene';
 
 const TYPING_TITLES = [
   'Creative Developer',
