@@ -119,9 +119,7 @@ export default function HeroSection() {
               <FiCode size={16} />
               View Projects
             </a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <a
               href={PERSONAL_INFO.resumeUrl}
               download
               id="hero-download-cv"
@@ -137,9 +135,16 @@ export default function HeroSection() {
                 }
               }}
             >
-              <FiDownload size={16} />
-              <span className="relative z-10">Download CV</span>
-            </motion.a>
+              <motion.div
+                className="flex items-center gap-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <FiDownload size={16} />
+                <span className="relative z-10">Download CV</span>
+              </motion.div>
+            </a>
+
             <a href="#contact" id="hero-contact" className="btn-ghost">
               Contact Me
               <FiArrowRight size={15} />
