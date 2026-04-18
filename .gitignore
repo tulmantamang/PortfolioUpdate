@@ -45,6 +45,4 @@ ehthumbs.db
 .eslintcache
 .stylelintcache
 .npm
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+
