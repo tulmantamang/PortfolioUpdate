@@ -11,7 +11,6 @@ import CodeWindow from './HeroScene';
 
 const TYPING_TITLES = [
   'Creative Developer',
-  'Full-Stack Engineer',
   'React Developer',
   'Web App Builder',
   'Open Source Enthusiast',
